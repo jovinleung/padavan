@@ -4,6 +4,7 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
 
 #### Extra functions / changes
 - Adding user/chinadns-ng , and fix shadowsocks + chinadns-ng using local domain whitellist.
+- AP Relay auto-daemon
 
 
 #### SS/SSR

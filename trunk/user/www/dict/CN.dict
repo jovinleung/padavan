@@ -2034,3 +2034,4 @@ pppoemwan2=多拨次数
 pppoemwan1=内网IP分流
 pppoemwan1_1=出口序号
 pppoemwan0=禁用443负载均衡
+AP_Relay=中继增强 (自动搜索 切换 信道 信号)【点击打开配置脚本】
