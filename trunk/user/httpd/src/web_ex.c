@@ -3547,6 +3547,12 @@ apply_cgi(const char *url, webs_t wp)
 		websRedirect(wp, current_url);
 		return 0;
 	}
+	else if (!strcmp(value, " ClearssrplusLog "))
+	{
+		// current only ssrpluslog implement this button
+		doSystem("echo "" > /tmp/ssrplus.log");
+		return 0;
+	}
 	else if (!strcmp(value, " Reboot "))
 	{
 		sys_reboot();
@@ -3560,9 +3566,7 @@ apply_cgi(const char *url, webs_t wp)
 	}
 	else if (!strcmp(value, " FreeMemory "))
 	{
-		doSystem("sync");
 		doSystem("echo 3 > /proc/sys/vm/drop_caches");
-		websRedirect(wp, current_url);
 		return 0;
 	}
 	else if (!strcmp(value, " RestoreNVRAM "))
